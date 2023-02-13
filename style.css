@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #ede1be;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #30288a;
+}
+.logo{
+    cursor: pointer;
+    margin: 30px 0;
+    width: 50px;
+    padding-left: 8%;
+}
+.logolink{
+    margin: 0 0 0 8%;
+}
+.logotext{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Paytone One', sans-serif;
+    padding-left: 2%;
+    color: white;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 5%; 
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Paytone One', sans-serif;
+    color: white;
+}
+nav ul li a:hover{
+    color: #ede1be;
+}
+.navbutton{
+    visibility: hidden;
+    color: #30288a;
+    padding: 16px;
+    font-size: 16px;
+    background-color: white;
+}
+.mobilenav{
+    visibility: hidden;
+    position: relative;
+    display: inline-block;
+}
+.mobilenavlinks{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    z-index: 1;
+    background-color: white;
+}
+.mobilenavlinks a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 10px;
+    color: black;
+}
+.mobilenav:hover .mobilenavlinks{
+    display: block;
+}
+.mobilenavlinks a:hover{
+    background-color: white;
+}
+.mobilenav:hover .navbutton{
+    background-color: #ede1be;
+}
+.hero{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+.heroimage2{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-height: 500px;
+    color: white;
+}
+.hero-text{
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.index-hero-text{
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Paytone One', sans-serif;
+    position: absolute;
+    top: 275px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.hero-desc{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Paytone One', sans-serif;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+button{
+    padding: 20px;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 25px;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #30288a;
+    color: white;
+}
+button:hover {
+    color: #30288a;
+    background: white;
+}
+.visitbtn{
+    position: absolute;
+    top: 425px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 2em;
+    color: #30288a;
+}
+h2{
+    padding-top: 10px;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 2em; 
+    color: #30288a;
+}
+.bodycontent{
+    display: flex;
+}
+.bodytext{
+    max-width: 60%;
+    padding-left: 2%;
+    font-size: 1.5em;
+}
+.bodytextcenter{
+    text-align: center;
+    font-size: 1.5em;
+}
+.indexbody1{
+    width: 85%;
+}
+.bodybutton{
+    text-align: right;
+    padding-right: 5%;
+}
+.bodyimage{
+    text-align: right;
+    flex-basis: 50%;
+    padding-right: 3%;
+}
+.artifactgallery{
+    margin: 10px;
+    border: 1px;
+    float: left;
+    
+}
+.artifactgallery img{
+    height: auto;
+    width: 100%;
+}
+.gallerydesc{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.footer{
+    margin-top: 50px; 
+    padding: 100px;
+    display: flex;
+    background: #30288a;
+    color: #efefef;
+}
+.footer h1{
+    font-family: 'Paytone One', sans-serif;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    color: #efefef;
+}
+.footerlogo{
+    width: 150px;
+}
+.footer ul li{
+    padding-left: 100px;
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Paytone One', sans-serif;
+    color: white;
+}
+.footer ul li a:hover {
+    color: #ede1be;
+}
+.footericon{
+    width: 25px;
+}
+.socials{
+    width: 35px;
+}
+@media (max-width: 1500px){
+    nav ul li{
+    padding-right: 0%; 
+    }
+}
+@media (max-width: 1150px){
+    nav ul li{
+    margin-right: 10px;
+    }
+}
+@media (max-width: 1000px){
+    .navbutton{
+    visibility: visible; 
+    }
+    .mobilenav{
+    visibility: visible;
+    }
+    nav ul li{
+    visibility: hidden; 
+    }
+    button{
+    font-size: 14px;
+    }
+    .visitbtn{
+    top: 400px;
+    }
+    .hero-text{
+    font-size: 20px;
+    top: 250px;
+    }
+    .index-hero-text{
+    font-size: 20px;
+    top: 250px;
+    }
+    .hero-desc{
+    top: 325px; 
+    }
+    .bodybutton{
+    text-align: center;
+    }
+    .footer{
+    padding: 100px 0px 100px 0px;
+    }
+    .footer h1{
+    padding-left: 20px;
+    }
+    .footerlogo{
+    visibility: hidden;
+    width: 50px;
+    }
+    .footer ul li{
+    padding-left: 20px;
+    }
+    .indexbody1{
+    visibility: hidden;
+    }
+    .bodytext{
+    max-width: 100%;
+    }
+}
+@media (max-width: 800px){
+    .index-hero-text{
+        top: 250px;
+    }
+    .hero-desc{
+        display: none;
+    }
+    .visitbtn{
+        top: 350px;
+    }
+}
+@media (max-width: 500px){
+    .logotext{
+        padding: 10px;
+        max-width: 30%;
+    }
+    .hero-text{
+        top: 200px;
+    }
+    .index-hero-text{
+        display: none;
+    }
+    .hero-desc{
+        display: none;
+    }
+    .visitbtn{
+        top: 200px;
+    }
+    .mobilenav{
+    position: absolute;
+    left: 65%;
+    }
+    .footer h1{
+    padding-left: 0px;
+    }
+    .footerlogo{
+    width: 0px;
+    }
+    .footer ul li{
+    padding-left: 0px;
+    }
+}
