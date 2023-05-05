@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: url('images/cursor.png'),auto;
+
+}
+@font-face {
+    font-family: quickremarks;
+    src: url(Pixelcastle-Regular.otf);
+}
+@font-face {
+    font-family: twilio;
+    src: url(Alvarado-Regular.woff);
+}
+body{
+    background-image: url('images/test2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #121212;
+    
+}
+h1{
+    text-align: center;
+    font-family: quickremarks;
+    transform: translate(0%, -20%);
+    font-size: 90px;
+    color: #ff91f8;
+    text-shadow: 0px 0px 0 rgb(241,131,234),
+                 0px -1px 0 rgb(227,117,220),
+                 0px -2px 0 rgb(213,103,206),
+                 0px -3px 0 rgb(198,88,191),
+                 0px -4px 0 rgb(184,74,177),
+                 0px -5px 0 rgb(170,60,163),
+                 0px -6px 0 rgb(156,46,149),
+                 0px -7px 0 rgb(142,32,135),
+                 0px -8px 0 rgb(127,17,120),
+                 0px -9px 0 rgb(113,3,106),
+                 0px -10px 0 rgb(113,3,106),
+                 0px -11px 0 rgb(113,3,106),
+                 0px -12px 0 rgb(113,3,106);
+}
+h2{
+    text-align: center;
+    font-family: quickremarks;
+    transform: translate(0%, -10%);
+    font-size: 70px;
+    color: #ff91f8;
+    text-shadow: 0px 0px 0 rgb(241,131,234),
+                 0px -1px 0 rgb(227,117,220),
+                 0px -2px 0 rgb(213,103,206),
+                 0px -3px 0 rgb(198,88,191),
+                 0px -4px 0 rgb(184,74,177),
+                 0px -5px 0 rgb(170,60,163),
+                 0px -6px 0 rgb(156,46,149),
+                 0px -7px 0 rgb(142,32,135),
+                 0px -8px 0 rgb(127,17,120),
+                 0px -9px 0 rgb(113,3,106),
+                 0px -10px 0 rgb(113,3,106),
+                 0px -11px 0 rgb(113,3,106),
+                 0px -12px 0 rgb(113,3,106);
+}
+nav{
+    position: relative;
+    float: left;
+    padding-left: 50px;
+    font-size: 90px;
+}
+nav a:hover {
+    color: #ff91f8;
+    /*text-shadow: 0px 0px 0 rgb(217,60,212),
+                 -1px 0px 0 rgb(208,51,203),
+                 -2px 0px 0 rgb(198,41,193),
+                 -3px 0px 0 rgb(189,32,184),
+                 -4px 0px 0 rgb(179,22,174),
+                 -5px 0px 0 rgb(170,13,165),
+                 -6px 0px 0 rgb(160,3,155),
+                 -7px 0px 0 rgb(151,-6,146),
+                 -8px 0px 0 rgb(141,-16,136),
+                 -9px 0px 0 rgb(132,-25,127),
+                 -10px 0px 0 rgb(122,-35,117),
+                 -11px 0px  0 rgb(112,-45,107),
+                 -12px 0px 11px rgba(36,11,31,0),
+                 -12px 0px 1px rgba(36,11,31,0.5),
+                 0px 0px 11px rgba(36,11,31,.2);*/
+}
+.navpointer {
+    padding-left: 20px;
+    width: 60px;
+    display: none;
+}
+
+nav a:hover + .navpointer {
+    animation: navpoint .7s infinite;
+    animation-timing-function: steps(1, end);
+    display: inline;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul a{
+    font-family: twilio;
+    font-size: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(113,3,106);
+}
+.youtube{
+    float: right;
+    margin-top: 95px;
+    padding-right: 50px;
+}
+
+.lyrics {
+    float: right;
+    padding-right: 50px;
+    animation: fadeIn 10s infinite;
+    font-size: 40px;
+}
+table { 
+    color: rgb(113,3,106);
+    text-align: center;
+    font-family: twilio;
+    font-size: 25px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 60%;
+    border-collapse: collapse;
+}
+
+table td{ 
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding: 20px;
+}
+tr{
+    background-color: #ff91f8;
+}
+tr:hover{
+    color: #ff91f8;
+    background-color: rgb(113,3,106);
+    font-size: 30px;
+}
+.ticket{
+    color: white;
+}
+.socials{
+
+    width: 35px;
+}
+.social{
+    text-align: center;
+}
+.contactheader {
+    color: #ff91f8;
+    font-family: twilio;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+.contactbody {
+    color: rgb(113,3,106);
+    font-family: twilio;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.merchitems {
+    text-align: center;
+    padding-left: 40px;
+}
+.merch{
+    width: 600px;
+    position:relative;
+    float: left;
+}
+.merchbuy{
+    
+}
+.merch:hover{
+    background-color: #ff91f8;
+}
+@keyframes navpoint {
+    0% { transform: translateX(-10px);}
+    50% { transform: translateX(20px);}
+}
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    15% { opacity: 1;}
+    85% { opacity: 1;}
+    100% { opacity: 0;}
+}
+@media (max-width: 1885px){
+    .merch{
+        width: 500px;
+    }
+}
+@media (max-width: 1300px) {
+    .merch{
+        float: none;
+        padding-left: 0px;
+        display: block;
+        margin: 0 auto;
+    }
+    .merchitems{
+        padding-left: 0px;
+    }
+    
+}
+@media (max-width: 1000px) {
+    body{
+        /*background-image: url('images/test.png');*/
+    }
+    .youtube{
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    table {
+        width: 80%;
+        font-size: 20px;
+    }
+    nav {
+        transform: translateX(20px);
+        transform: translateY(-140px);
+        margin-bottom: -25%;
+    }
+    
+}
+@media (max-width: 660px){
+    nav {
+        padding-left: 0px;
+        transform: translateX(20px);
+        transform: translateY(-140px);
+        text-align: center;
+        float: none;
+        overflow: auto;
+        margin-bottom: -75%;
+    }
+
+    nav ul {
+        transform: translateX(-20px);
+        overflow: auto;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+    table {
+        width: 90%;
+        font-size: 16px;
+    }
+    .event{
+        display: none;
+    }
+    .youtube {
+        display: none;
+    }
+    tr:hover{
+    font-size: 23px;
+    }
+    .contactheader {
+        color: #ff91f8;
+        font-family: twilio;
+        text-align: center;
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+    .contactbody {
+        color: rgb(113, 3, 106);
+        font-family: twilio;
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .merch{
+        width: 400px;
+    }
+}
+
+@media (max-width: 420px){
+    h1 {
+        font-size: 60px;
+    }
+    .merch{
+        width: 300px;
+    }
+}
