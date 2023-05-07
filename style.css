@@ -69,21 +69,6 @@ nav{
 }
 nav a:hover {
     color: #ff91f8;
-    /*text-shadow: 0px 0px 0 rgb(217,60,212),
-                 -1px 0px 0 rgb(208,51,203),
-                 -2px 0px 0 rgb(198,41,193),
-                 -3px 0px 0 rgb(189,32,184),
-                 -4px 0px 0 rgb(179,22,174),
-                 -5px 0px 0 rgb(170,13,165),
-                 -6px 0px 0 rgb(160,3,155),
-                 -7px 0px 0 rgb(151,-6,146),
-                 -8px 0px 0 rgb(141,-16,136),
-                 -9px 0px 0 rgb(132,-25,127),
-                 -10px 0px 0 rgb(122,-35,117),
-                 -11px 0px  0 rgb(112,-45,107),
-                 -12px 0px 11px rgba(36,11,31,0),
-                 -12px 0px 1px rgba(36,11,31,0.5),
-                 0px 0px 11px rgba(36,11,31,.2);*/
 }
 .navpointer {
     padding-left: 20px;
@@ -177,12 +162,32 @@ tr:hover{
     position:relative;
     float: left;
 }
-.merchbuy{
-    
-}
 .merch:hover{
     background-color: #ff91f8;
 }
+.albums{
+    margin-left: 50px;
+    
+}
+.album{
+    float: left;
+    width: 500px;
+}
+.albumtitle{
+    text-align: center;
+    font-size: 30px;
+    font-family: twilio;
+    color: #ff91f8;
+}
+.tracklist{
+    margin-left: 500px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 23px;
+    font-family: twilio;
+    color: rgb(113,3,106);
+}
+
 @keyframes navpoint {
     0% { transform: translateX(-10px);}
     50% { transform: translateX(20px);}
@@ -211,9 +216,6 @@ tr:hover{
     
 }
 @media (max-width: 1000px) {
-    body{
-        /*background-image: url('images/test.png');*/
-    }
     .youtube{
         width: 100%;
         aspect-ratio: 16 / 9;
@@ -229,7 +231,21 @@ tr:hover{
         transform: translateY(-140px);
         margin-bottom: -25%;
     }
-    
+    .albums{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .album{
+        float: none;
+        padding-left: 0px;
+        width: 500px;
+    }
+    .albumtitle{
+        padding-top: 20px;
+    }   
+    .tracklist{
+        margin-left: 0px;
+    }
 }
 @media (max-width: 660px){
     nav {
@@ -279,6 +295,9 @@ tr:hover{
     }
     .merch{
         width: 400px;
+    }
+    .album{
+        width: 300px;
     }
 }
 
